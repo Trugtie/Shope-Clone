@@ -43,6 +43,10 @@ html {
   margin-right: 8px;
 }
 
+.text-bold{
+  font-weight:600 !important;
+}
+
 /* Animation */
 @keyframes fadeIn {
   from {

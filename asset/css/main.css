@@ -318,3 +318,151 @@
 .poppover__btn:hover {
   background-color: rgba(0, 0, 0, 0.205);
 }
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.158);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  min-width: 400px;
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 2px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.modal__header {
+  margin-bottom: 22px;
+}
+
+.modal__header-title {
+  font-size: 2rem;
+  color: #222;
+  font-weight: 400;
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__form-tel {
+  padding: 12px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+.modal__form-tel::placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.modal__form-btn {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+  color: #fff;
+  background-color: #ee4d2d;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 9%);
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal__form-btn:hover {
+  background-color: #ee4d2dc2;
+}
+
+.modal__divider {
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #ccc;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.modal__divider-text {
+  padding: 0 16px;
+}
+
+.modal__divider-line {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+  flex: 1;
+}
+
+.modal__footer {
+}
+
+.modal__footer-grp {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.modal__footer-btn {
+  border: 1px solid #ccc;
+  background: none;
+  width: 100%;
+  font-size: 1.9rem;
+  cursor: pointer;
+  border-radius: 2px;
+  margin: 5px;
+  transition: all .3s;
+  padding: 10px 0px;
+}
+
+.modal__footer-btn:hover{
+background-color: rgb(238, 238, 238);
+}
+
+.modal__footer-ico {
+  margin-right: 5px;
+}
+
+.modal__footer-ico--fb {
+  color:#1877F2;
+}
+
+.modal__footer-ico--gg {
+  color:#EA4436;
+}
+
+
+.modal__footer-notify {
+  margin: 30px 25px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.modal__footer-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #F27448;
+  font-weight: 300;
+}
+
+.modal__footer-help {
+  text-align: center;
+  font-weight: 300;
+}
