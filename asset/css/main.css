@@ -78,7 +78,7 @@
   padding: 10px;
   background-color: var(--white-color);
   border-radius: 2px;
-  animation: fadeIn ease 0.3s;
+  animation: fade ease 0.3s;
   display: none;
   z-index: 9999;
 }
@@ -327,9 +327,10 @@
   right: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.158);
-  display: flex;
   justify-content: center;
   align-items: center;
+  animation: fade .3s;
+  display: none;
 }
 
 .modal__container {
@@ -338,6 +339,7 @@
   padding: 20px 30px;
   border-radius: 2px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  animation: fadeDown .3s;
 }
 
 .modal__header {
@@ -466,3 +468,4 @@ background-color: rgb(238, 238, 238);
   text-align: center;
   font-weight: 300;
 }
+
