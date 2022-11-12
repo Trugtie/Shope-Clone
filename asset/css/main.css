@@ -511,7 +511,7 @@ display: flex;
   border-radius: 2px;
   display: none;
   animation: scaleDown .3s;
-  transform-origin: top right;
+  transform-origin: calc(100% - 20px) top;
 }
 
 .cart__dropdown::after{
