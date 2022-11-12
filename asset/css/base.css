@@ -48,7 +48,11 @@ html {
 }
 
 .modal-show{
-  display: flex;
+  display: flex !important;
+}
+
+.form-show{
+  display: block !important;
 }
 
 /* Animation */
@@ -69,5 +73,16 @@ html {
   to{
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+
+@keyframes scaleDown{
+  from{
+    opacity: 0;
+    scale: 0;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
   }
 }

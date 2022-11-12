@@ -21,6 +21,7 @@
     />
     <link rel="stylesheet" href="./asset/css/base.css" />
     <link rel="stylesheet" href="./asset/css/main.css" />
+   
   </head>
   <body>
     <div class="main">
@@ -178,10 +179,10 @@
               <li
                 class="navbar__list-item navbar__list-item--bold navbar__list-item--separate"
               >
-                <a class="item__link" href="#">Đăng Ký</a>
+                <a class="item__link btn-register" href="#">Đăng Ký</a>
               </li>
               <li class="navbar__list-item navbar__list-item--bold">
-                <a class="item__link" href="#">Đăng Nhập</a>
+                <a class="item__link btn-login" href="#">Đăng Nhập</a>
               </li>
             </ul>
           </nav>
@@ -223,6 +224,36 @@
           </div>
           <div class="cart">
             <i class="fa-solid fa-cart-shopping"></i>
+            <div class="cart__dropdown">
+              <h3 class="cart__dropdown-header">Sản Phẩm Mới Thêm</h3>
+              <ul class="cart__dropdown-list">
+                <li class="cart-item">
+                  <img src="https://cf.shopee.vn/file/sg-11134201-22090-m8fywhyiwyhv9e" alt="" class="cart-item__img">
+                  <h4 class="cart-item__title">Iphone 14</h4>
+                  <span class='cart-item__price'>12.000.000 đ</span>
+                </li>
+                <li class="cart-item">
+                  <img src="https://cf.shopee.vn/file/sg-11134201-22090-m8fywhyiwyhv9e" alt="" class="cart-item__img">
+                  <h4 class="cart-item__title">Iphone 14</h4>
+                  <span class='cart-item__price'>12.000.000 đ</span>
+                </li>
+                <li class="cart-item">
+                  <img src="https://cf.shopee.vn/file/sg-11134201-22090-m8fywhyiwyhv9e" alt="" class="cart-item__img">
+                  <h4 class="cart-item__title">Iphone 14</h4>
+                  <span class='cart-item__price'>12.000.000 đ</span>
+                </li>
+                <li class="cart-item">
+                  <img src="https://cf.shopee.vn/file/sg-11134201-22090-m8fywhyiwyhv9e" alt="" class="cart-item__img">
+                  <h4 class="cart-item__title">Iphone 14</h4>
+                  <span class='cart-item__price'>12.000.000 đ</span>
+                </li>
+              </ul>
+              <div class="cart__dropdown-footer">
+                <button class="dropdown-footer__btn">
+                  Xem Giỏ Hàng
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -231,18 +262,19 @@
     </div>
     <div class="modal">
       <!-- Register Form -->
-      <div class="modal__container modal-register">
+      <div class="modal__container form-register">
         <header class="modal__header">
           <h1 class="modal__header-title">Đăng ký</h1>
+          <i class="fa-solid fa-xmark close-btn"></i>
         </header>
-        <body class="modal__form">
+        <div class="modal__form">
           <input
             type="text"
             class="modal__form-tel"
             placeholder="Số điện thoại"
           />
           <button class="modal__form-btn">Tiếp theo</button>
-        </body>
+        </div>
         <div class="modal__divider">
           <div class="modal__divider-line"></div>
           <div class="modal__divider-text">HOẶC</div>
@@ -276,18 +308,28 @@
         </footer>
       </div>
       <!-- Login Form -->
-      <div class="modal__container modal-login">
+      <div class="modal__container form-login">
         <header class="modal__header">
-          <h1 class="modal__header-title">Đăng ký</h1>
+          <h1 class="modal__header-title">Đăng nhập</h1>
+          <i class="fa-solid fa-xmark close-btn"></i>
         </header>
-        <body class="modal__form">
+        <div class="modal__form">
           <input
             type="text"
             class="modal__form-tel"
-            placeholder="Số điện thoại"
+            placeholder="Email/Số điện thoại/Tên đăng nhập"
           />
-          <button class="modal__form-btn">Tiếp theo</button>
-        </body>
+          <input
+          type="password"
+          class="modal__form-tel"
+          placeholder="Mật khẩu"
+        />
+          <button class="modal__form-btn">Đăng nhập</button>
+          <div class="modal__form-forgot">
+            <a href="#" class="modal__form-link">Quên mật khẩu</a>
+            <a href="#" class="modal__form-link">Đăng nhập với SMS</a>
+          </div>
+        </div>
         <div class="modal__divider">
           <div class="modal__divider-line"></div>
           <div class="modal__divider-text">HOẶC</div>
@@ -308,18 +350,14 @@
               >Google
             </button>
           </div>
-          <h3 class="modal__footer-notify">
-            Bằng việc đăng kí, bạn đã đồng ý với Shopee về
-            <br />
-            <a href="#" class="modal__footer-link">Điều khoản dịch vụ</a> &
-            <a href="#" class="modal__footer-link">Chính sách bảo mật</a>
-          </h3>
+
           <h2 class="modal__footer-help">
-            Bạn đã có tài khoản?
-            <a href="#" class="modal__footer-link text-bold">Đăng nhập</a>
+            Bạn mới biết đến Shopee?
+            <a href="#" class="modal__footer-link text-bold">Đăng ký</a>
           </h2>
         </footer>
       </div>
     </div>
+   <script src="./asset/js/modal.js"></script>
   </body>
 </html>
